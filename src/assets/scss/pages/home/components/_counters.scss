@@ -1,0 +1,13 @@
+.counters {
+  background-color: $dark-blue;
+
+  &__item {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 55px 0 40px;
+  }
+
+  &__item-num {
+    color: $pale-orange
+  }
+}
