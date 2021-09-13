@@ -1,19 +1,18 @@
-import {Home} from "../../../pages/Home/Home";
-import {About} from "../../../pages/About/About";
-import {Services} from "../../../pages/Services/Services";
-import {Portfolio} from "../../../pages/Portfolio/Portfolio";
-import {Contacts} from "../../../pages/Contacts/Contacts";
-import {Testimonials} from "../../../pages/Testimonials/Testimonials";
+import {Home} from "../../../../pages/Home/Home";
+import {About} from "../../../../pages/About/About";
+import {Services} from "../../../../pages/Services/Services";
+import {Portfolio} from "../../../../pages/Portfolio/Portfolio";
+import {Contacts} from "../../../../pages/Contacts/Contacts";
+import {Testimonials} from "../../../../pages/Testimonials/Testimonials";
 
-interface IAppNav {
+interface IHeaderNav {
     label: string;
     route: string;
     component: () => JSX.Element;
 }
 
 
-
-export const APP_NAV : IAppNav[] = [
+export const APP_NAV : IHeaderNav[] = [
     {
         label: "Home",
         route: "/",

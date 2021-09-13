@@ -1,0 +1,56 @@
+.contact {
+  padding: 154px 15px 86px;
+  background-color: $dark-blue;
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+
+  &__text {
+    font-size: 14px;
+    font-family: QuattrocentoSans;
+    max-width: 400px;
+    margin: 0 auto;
+    color: $light-gray;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: Athelas;
+    font-size: 33px;
+    margin-bottom: 25px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-family: QuattrocentoSans;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid $light-gray;
+    background-color: $dark-blue;
+    color: $light-gray;
+    outline: none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: $light-gray;
+  }
+
+  select {
+    option {
+      color: #fff;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    margin: 20px auto 0 0;
+    background-color: $dark-orange;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: MyriadPro;
+  }
+}

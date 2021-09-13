@@ -1,0 +1,19 @@
+@import "fonts/fonts";
+@import "bootstrapCutsom";
+@import "vars";
+@import "typography";
+@import "repeatable/repeatable";
+
+@import "components/header/header";
+@import "components/footer/footer";
+@import "components/topSection/topSection";
+
+@import "pages/home/index.home.scss";
+
+
+body {
+  font-family: MyriadPro;
+  font-size: 12px;
+  color: $text-color;
+  //text-align: left;
+}

@@ -1,6 +1,8 @@
 @font-face {
-  font-family: 'MyriadProp';
-  src: url('.woff2') format('woff2'),
-  url('myfont.woff') format('woff'),
-  url('myfont.ttf') format('truetype');
+  font-family: 'MyriadPro';
+  font-weight: 400;
+  src: url('../../../fonts/MyriadPro/Myriadpro-regular.woff');
+  src: url('../../../fonts/MyriadPro/Myriadpro-regular.woff2');
+  src: url('../../../fonts/MyriadPro/Myriadpro-regular.ttf');
 }
+

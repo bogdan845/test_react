@@ -2,12 +2,21 @@
   background-color: $dark-blue;
 
   &__item {
-    color: #fff;
+    padding: 55px 0 15px;
+    color: #CBD3D5;
     text-transform: uppercase;
-    padding: 55px 0 40px;
+    font-family: MyriadPro;
+    font-size: 13px;
+
+    @include media-breakpoint-up(md) {
+      padding: 55px 0 40px;
+    }
   }
 
+
   &__item-num {
-    color: $pale-orange
+    color: #995437;
+    font-family: VaniBold;
+    font-size: 38px;
   }
 }

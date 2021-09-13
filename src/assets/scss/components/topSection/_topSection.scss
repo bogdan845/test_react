@@ -1,0 +1,21 @@
+.top-section {
+  background-color: $light-gray;
+  padding: 230px 75px 58px 16px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: Athelas;
+
+  &__title {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  &__sub-title {
+    color: $pale-orange;
+    font-weight: 400;
+  }
+}

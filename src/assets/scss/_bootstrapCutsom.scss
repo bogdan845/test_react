@@ -1,9 +1,20 @@
+
+
+
+/*
+HEADINGS
+*/
+//$headings-font-weight: 600;
+//$headings-line-height: 1.2;
+//$headings-color: null;
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
 @import "~bootstrap/scss/containers";
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/bootstrap-grid";
-//@import "~bootstrap/scss/type";
+

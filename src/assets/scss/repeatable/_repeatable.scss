@@ -1,0 +1,30 @@
+.r-content {
+  font-family: Helvetica;
+  font-size: 15px;
+
+  &.gray {
+    color: $light-gray
+  }
+
+  &.default {
+    color: $text-color;
+  }
+
+  &.white {
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: Athelas;
+
+    &.orange {
+      color: $dark-orange
+    }
+
+    &.default {
+      color: #fff;
+    }
+  }
+}
