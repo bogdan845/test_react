@@ -1,17 +1,19 @@
 import React from 'react';
 import './App.scss';
-import './assets/scss/index.scss';
 import {BrowserRouter as Router} from "react-router-dom";
 import {MainScreen} from "./screens/MainScreen";
-
+import {Provider} from "react-redux";
+import {store} from "./store/store";
 
 function App() {
     return (
-        <Router>
-            <div className="App">
-                <MainScreen/>
-            </div>
-        </Router>
+        <Provider store={store}>
+            <Router>
+                <div className="App">
+                    <MainScreen/>
+                </div>
+            </Router>
+        </Provider>
     );
 }
 

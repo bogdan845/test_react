@@ -10,18 +10,17 @@ export function AboutUs() {
             img={item.img}
             label={item.label}
         />
-    ))
+    ));
 
     return (
         <section className="about-us">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-md-6">
-                        <div className="about-us__img-wrapper">
-                        </div>
+                    <div className="col-12 col-md-6 align-self-center">
+                        <div className="about-us__img-wrapper"></div>
                     </div>
 
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 align-self-center">
                         <div className="about-us__content-wrapper">
                             <h3 className="about-us__title">
                                 About us

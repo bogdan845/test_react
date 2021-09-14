@@ -1,4 +1,4 @@
-import React from "react";
+import React, {} from "react";
 import {COUNTERS} from "../../../../utils/constants/counters/counters";
 import {SingleCounter} from "./SingleCounter";
 

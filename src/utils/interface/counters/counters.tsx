@@ -1,4 +1,4 @@
 export interface ICounters {
-    number: string;
+    number: number;
     label: string;
 }

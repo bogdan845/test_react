@@ -1,12 +1,33 @@
-
-
-
 /*
 HEADINGS
 */
 //$headings-font-weight: 600;
 //$headings-line-height: 1.2;
 //$headings-color: null;
+
+
+/*
+GRID
+*/
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+  //xl: 1200px,
+);
+
+$container-max-widths: (
+        xs: 276px,
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+  //xl: 1380px,
+);
+
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";

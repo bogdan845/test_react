@@ -1,6 +1,6 @@
 import {Home} from "../../../../pages/Home/Home";
 import {About} from "../../../../pages/About/About";
-import {Services} from "../../../../pages/Services/Services";
+import {OurServices} from "../../../../pages/OurServices/OurServices";
 import {Portfolio} from "../../../../pages/Portfolio/Portfolio";
 import {Contacts} from "../../../../pages/Contacts/Contacts";
 import {Testimonials} from "../../../../pages/Testimonials/Testimonials";
@@ -26,7 +26,7 @@ export const APP_NAV : IHeaderNav[] = [
     {
         label: "Services",
         route: "/services",
-        component: Services,
+        component: OurServices,
     },
     {
         label: "Testimonials",

@@ -23,9 +23,33 @@
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
   background-color: $dark-gray;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: calc(100vh - 75px);
+  flex-direction: column;
+  right: -100%;
+  transition: 0.25s linear;
+  opacity: 0;
+
+  &-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &.active {
+    right: 0;
+    opacity: 1;
+  }
+
+  @include media-breakpoint-up(md) {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    opacity: 1;
+  }
 
   &__item {
     margin: 0 5px;
@@ -50,5 +74,24 @@
     &:active {
       color: $header-menu-item;
     }
+  }
+}
+
+
+/*
+* sidebar btm
+*/
+
+.sidebarBtn {
+  color: $orange;
+  font-size: 30px;
+  display: block;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  top: 15px;
+
+  @include media-breakpoint-up(md) {
+    display: none;
   }
 }

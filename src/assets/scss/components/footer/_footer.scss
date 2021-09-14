@@ -1,4 +1,5 @@
 .footer {
+  margin-top: auto;
 
   &__top {
     background-color: $dark-blue;
@@ -47,14 +48,114 @@
       &:hover,
       &:active,
       &:focus {
-        color: $footer-menu-color;
+        color: $orange;
       }
     }
   }
 
+  &__contacts {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+      align-items: flex-start;
+      margin-top: 0;
+    }
+  }
+
+
+  /*
+   BOTTOM PART
+   */
   &__bottom {
     background-color: #000;
-    color: #fff;
-    padding: 20px 0;
+    padding: 22px 0;
+    color: $light-gray
+  }
+
+  &__copyright {
+    text-align: center;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+
+  // PHONE
+  &__phone-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: $light-gray;
+      text-decoration: none;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  &__phone-icon {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
+  // LOCATION
+  &__location {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  &__location-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__location-icon {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
+
+  // SOCIALS
+  &-socials {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      justify-content: flex-end;
+      margin-bottom: 0;
+    }
+
+    &__item {
+
+      a {
+        color: $light-gray;
+        padding: 0 10px;
+        font-size: 16px;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
   }
 }

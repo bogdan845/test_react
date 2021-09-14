@@ -6,7 +6,7 @@ import {BottomFooter} from "./Copyright/BottomFooter";
 
 export function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <div className="footer__top">
                 <FooterNav/>
             </div>

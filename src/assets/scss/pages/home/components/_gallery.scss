@@ -1,0 +1,69 @@
+.gallery {
+  font-size: 14px;
+  text-align: center;
+
+  &__title {
+    color: $orange;
+    text-transform: uppercase;
+    font-family: Athelas;
+    margin-bottom: 30px;
+  }
+
+  &-box {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 30px 15px 0;
+
+    ul {
+      position: relative;
+      padding-bottom: 48px;
+
+      li {
+        height: 383px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 48px;
+        width: 100%;
+        background-color: #D8D8D8;
+      }
+    }
+
+    button {
+      bottom: 8px;
+      background: transparent;
+      border: 1px solid #88543a;
+      min-width: 26px;
+      min-height: 26px;
+      border-radius: 100%;
+      padding: 0;
+
+      &:active,
+      &:hover,
+      &:focus {
+        background: #88543a;
+
+        &:before {
+          color: #fff;
+        }
+      }
+
+      &:before {
+        color: #88543a;
+        font-size: 8px;
+      }
+    }
+  }
+
+
+}

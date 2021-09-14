@@ -2,7 +2,14 @@
 @import "components/counters";
 @import "components/contactUs";
 @import "components/aboutUs";
+@import "components/gallery";
+
 
 .placeholder {
-  height: 550px;
+  font-size: 15px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
