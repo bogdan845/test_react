@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.67babefe.chunk.css",
+    "main.js": "/static/js/main.2b432a87.chunk.js",
+    "main.js.map": "/static/js/main.2b432a87.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ecf8a52a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ecf8a52a.js.map",
+    "static/css/2.e1b25a95.chunk.css": "/static/css/2.e1b25a95.chunk.css",
+    "static/js/2.54169840.chunk.js": "/static/js/2.54169840.chunk.js",
+    "static/js/2.54169840.chunk.js.map": "/static/js/2.54169840.chunk.js.map",
+    "static/js/3.0a233826.chunk.js": "/static/js/3.0a233826.chunk.js",
+    "static/js/3.0a233826.chunk.js.map": "/static/js/3.0a233826.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.e1b25a95.chunk.css.map": "/static/css/2.e1b25a95.chunk.css.map",
+    "static/css/main.67babefe.chunk.css.map": "/static/css/main.67babefe.chunk.css.map",
+    "static/js/2.54169840.chunk.js.LICENSE.txt": "/static/js/2.54169840.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/VaniBold.6f6907e0.woff2",
+    "static/media/styles.css": "/static/media/revicons.e8746a62.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ecf8a52a.js",
+    "static/css/2.e1b25a95.chunk.css",
+    "static/js/2.54169840.chunk.js",
+    "static/css/main.67babefe.chunk.css",
+    "static/js/main.2b432a87.chunk.js"
+  ]
+}
