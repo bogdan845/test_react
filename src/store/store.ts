@@ -5,7 +5,7 @@ import {rootReducer} from "./rootReducer";
 
 
 const initialState = {}
-const sagaMiddleware = createSagaMiddleware(sagas as SagaMiddlewareOptions<Generator<any>>);
+const sagaMiddleware = createSagaMiddleware(sagas as SagaMiddlewareOptions);
 const middleware = [sagaMiddleware];
 
 export const store = createStore(

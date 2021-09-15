@@ -1,6 +1,8 @@
 import React from "react";
+import {Placeholder} from "../../components/Reusable/Placeholder/Placeholder";
+
 export function Portfolio() {
     return (
-        <div>Portfolio</div>
+        <Placeholder title={"Portfolio"}/>
     )
 }

@@ -1,8 +1,8 @@
-import axios, {AxiosInstance} from "axios";
+import axios, {AxiosInstance, AxiosPromise} from "axios";
 
-const axiosInstance : AxiosInstance = axios.create();
+const axiosInstance: AxiosInstance = axios.create();
 
-export const get = (url: string, payload={}) : Promise<any> => {
+export const get = (url: string, payload = {}): AxiosPromise => {
     return axiosInstance({
         method: "get",
         url,
@@ -10,7 +10,7 @@ export const get = (url: string, payload={}) : Promise<any> => {
     })
 }
 
-export const post = (url: string, payload={}) : Promise<any> => {
+export const post = (url: string, payload = {}): AxiosPromise => {
     return axiosInstance({
         method: "post",
         url,

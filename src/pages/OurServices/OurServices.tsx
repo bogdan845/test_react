@@ -1,6 +1,8 @@
 import React from "react";
+import {Placeholder} from "../../components/Reusable/Placeholder/Placeholder";
+
 export function OurServices() {
     return (
-        <div>Services</div>
+        <Placeholder title={"Services"}/>
     )
 }

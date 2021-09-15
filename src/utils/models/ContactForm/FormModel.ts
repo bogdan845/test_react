@@ -1,3 +1,5 @@
+import {IFormProps} from "../../interface/submitForm/submitForm";
+
 export class FormModel {
     name: string;
     category: string;
@@ -6,12 +8,12 @@ export class FormModel {
     email: string;
     message: string;
 
-    constructor(public data: any) {
+    constructor(public data: IFormProps) {
         this.name = data.name || "";
         this.category = data.category || "";
         this.phone = data.phone || "";
         this.city = data.city || "";
-        this.email = data.mail || "";
+        this.email = data.email || "";
         this.message = data.message || ""
     }
 

@@ -1,6 +1,8 @@
 import React from "react";
+import {Placeholder} from "../../components/Reusable/Placeholder/Placeholder";
+
 export function Testimonials() {
     return (
-        <div>Testimonials</div>
+        <Placeholder title={"Testimonials"}/>
     )
 }

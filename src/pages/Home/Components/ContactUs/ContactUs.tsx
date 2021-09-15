@@ -32,14 +32,16 @@ export function ContactsUs() {
                                 <option value="" disabled defaultValue="">Category</option>
                                 {selectOptions}
                             </Field>
-                            {touched.category && errors.category && <span className="field-box__warning">{errors.category}</span>}
+                            {touched.category && errors.category &&
+                            <span className="field-box__warning">{errors.category}</span>}
                         </div>
                     </div>
 
                     <div className="col-12 col-md-6">
                         <div className="field-box">
                             <Field type="tel" name="phone" placeholder="Phone"/>
-                            {touched.phone && errors.phone && <span className="field-box__warning">{"invalid phone number"}</span>}
+                            {touched.phone && errors.phone &&
+                            <span className="field-box__warning">{"invalid phone number"}</span>}
                         </div>
                     </div>
 
@@ -55,7 +57,8 @@ export function ContactsUs() {
                     <div className="col-12">
                         <div className="field-box">
                             <Field type="email" name="email" placeholder="E-mail"/>
-                            {touched.email && errors.email && <span className="field-box__warning">{errors.email}</span>}
+                            {touched.email && errors.email &&
+                            <span className="field-box__warning">{errors.email}</span>}
                         </div>
                     </div>
 
@@ -65,7 +68,7 @@ export function ContactsUs() {
                         </div>
                     </div>
                 </div>
-                <button className="contact__btn">Contact us</button>
+                <button type="submit" className="contact__btn">Contact us</button>
             </Form>
         )
     }
@@ -82,9 +85,8 @@ export function ContactsUs() {
             phone: Yup.number().min(7, 'phone to short').required("required field")
         }),
         handleSubmit: (values) => {
-            console.log(values)
             dispatch(contactUs(values));
-            return values
+            return values;
         }
     })(ContactForm);
 

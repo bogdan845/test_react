@@ -4,7 +4,7 @@ import {Leaders} from "./Components/Leaders/Leaders";
 import {Counters} from "./Components/Counters/Counters";
 import {AboutUs} from "./Components/AboutUs/AboutUs";
 import {ContactsUs} from "./Components/ContactUs/ContactUs";
-import {Placeholder} from "./Components/Placeholder/Placeholder";
+import {Placeholder} from "../../components/Reusable/Placeholder/Placeholder";
 import {Gallery} from "./Components/Gallery/Gallery";
 
 export function Home() {
@@ -13,7 +13,7 @@ export function Home() {
             <TopSection/>
             <Leaders/>
             <Counters/>
-            <Placeholder/>
+            <Placeholder title={"Lorem title"}/>
             <ContactsUs/>
             <AboutUs/>
             <Gallery/>

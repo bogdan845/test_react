@@ -18,26 +18,29 @@
 }
 
 
+.header {
+  .row > div {
+    padding: 0;
+  }
+}
+
+
 .menu {
   $self: &;
-  padding: 0;
+  padding: 75px 0 0 0;
   margin: 0;
   display: flex;
   list-style-type: none;
   background-color: $dark-gray;
-  width: 100%;
-  position: absolute;
+  width: 250px;
   top: 0;
-  height: calc(100vh - 75px);
+  height: 100vh;
   flex-direction: column;
   right: -100%;
   transition: 0.25s linear;
   opacity: 0;
-
-  &-wrapper {
-    overflow: hidden;
-    position: relative;
-  }
+  z-index: 8010;
+  position: fixed;
 
   &.active {
     right: 0;
@@ -49,7 +52,32 @@
     flex-direction: row;
     height: auto;
     opacity: 1;
+    width: 100%;
+    transition: none;
+    padding: 0;
   }
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &-layout {
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: -100%;
+      transition: 0.25s linear;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 8000;
+      position: fixed;
+
+      &.active {
+        left: 0
+      }
+    }
+  }
+
 
   &__item {
     margin: 0 5px;
@@ -86,10 +114,11 @@
   color: $orange;
   font-size: 30px;
   display: block;
-  position: absolute;
   right: 0;
-  z-index: 10;
+  z-index: 8100;
   top: 15px;
+  cursor: pointer;
+  position: fixed;
 
   @include media-breakpoint-up(md) {
     display: none;

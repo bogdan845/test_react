@@ -14,13 +14,10 @@ const initialState = {
 
 
 export const contactUsReducer = handleActions({
-    [ContactUsAction.CONTACT_US_RESPONSE_STATUS]: (state, {payload}) => {
-        console.log("contact us", payload);
-        return ({
-            ...state,
-            status: payload.status,
-            data: payload.data
-        })
-    }
+    [ContactUsAction.CONTACT_US_RESPONSE_STATUS]: (state, {payload}) => ({
+        ...state,
+        status: payload.status,
+        data: payload.data
+    })
 }, initialState)
 

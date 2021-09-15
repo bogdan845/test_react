@@ -1,7 +1,8 @@
 import React from "react"
+import {Placeholder} from "../../components/Reusable/Placeholder/Placeholder";
 
 export function Contacts() {
     return (
-        <div>Contacts</div>
+        <Placeholder title={"Contacts"}/>
     )
 }

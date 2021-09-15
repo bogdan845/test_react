@@ -4,10 +4,10 @@ import {GalleryActions, galleryFetcher, galleryRequestStatus} from "./galleryAct
 import {api} from "../../../api/services";
 
 
-function* galleryHandler(): Generator<any> {
+function* galleryHandler(): Generator<{}> {
     try {
         yield put(galleryRequestStatus({status: RequestStatus.LOADING}));
-        const getData: any = yield call(api.gallery.fetchGallery)
+        const getData: any = yield call(api.gallery.fetchGallery);
         if (getData.data) {
             yield put(galleryFetcher({
                 status: RequestStatus.SUCCEED,

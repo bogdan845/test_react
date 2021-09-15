@@ -14,7 +14,7 @@ export function Gallery() {
     }, [dispatch]);
 
 
-    const {data, status} = useSelector(gallerySelector);
+    const {data} = useSelector(gallerySelector);
     const carouselResponsive = {
         desktop: {
             breakpoint: {max: 3000, min: 960},
